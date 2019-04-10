@@ -5,6 +5,6 @@ function findMatching(drivers, string) {
 }
 
 function fuzzyMatch(drivers, string) {
-    findByFirstInitial = drivers.filter(function (name) { return name == string; });
+  findByFirstInitial = drivers.filter(function (name) { return name[0] == string; });
   return findByFirstInitial
 }

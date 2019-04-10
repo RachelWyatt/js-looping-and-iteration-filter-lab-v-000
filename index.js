@@ -10,6 +10,6 @@ function fuzzyMatch(drivers, string) {
 }
 
 function matchName(drivers, string) {
-  let nameMatch = drivers.filter(function (name) { return driver.name == string; });
+  let nameMatch = drivers.filter(function (driver) { return driver.name == string; });
   return nameMatch
 }

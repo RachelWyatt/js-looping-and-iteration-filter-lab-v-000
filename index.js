@@ -5,11 +5,11 @@ function findMatching(drivers, string) {
 }
 
 function fuzzyMatch(drivers, string) {
-  findByFirstInitial = drivers.filter(function (name) { return name[0] == string; });
+  let findByFirstInitial = drivers.filter(function (name) { return name[0] == string; });
   return findByFirstInitial
 }
 
 function matchName(drivers, string) {
-  nameMatch = drivers.filter(function (name) { return name[0] == string; });
+  let nameMatch = drivers.filter(function (name) { return name == string; });
   return nameMatch
 }
